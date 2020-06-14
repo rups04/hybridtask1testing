@@ -6,7 +6,7 @@
     <body> 
         <pre>
         <?php
-        $filepath='cat /home/ec2-user/domain_name.txt';
+        $filepath=`cat /home/ec2-user/domain_name.txt`;
         
         echo   "<h2>This is Rupali Gurjar</h2>";
         echo   "<img src="http://${filepath}/rups.jpg"   width='250'   height='512'     />";
