@@ -4,8 +4,14 @@
         <title>My website</title> 
     </head> 
     <body> 
-        <h2>This is Rupali Gurjar</h2> 
-        <img src="http://${cat domain_name.txt}/rups.jpg"   width='250'   height='512'     />
+        <pre>
+        <?php
+        $filepath='cat /home/ec2-user/domain_name.txt';
+        
+        echo   "<h2>This is Rupali Gurjar</h2>" 
+        echo   "<img src="http://${filepath}/rups.jpg"   width='250'   height='512'     />";
+        ?>
+        </pre>
     </body> 
 </html>                     
 
